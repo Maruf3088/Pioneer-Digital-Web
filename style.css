@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'foturaLight';
+  src: url('/fonts/futura%20medium%20bt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'foturalight2';
+  src: url('/fonts/futura%20light%20bt.ttf') format('truetype');
+}

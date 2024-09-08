@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Digital</title>
+
+    <!--CSS-->
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
+
+
+    <!--Remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--Spectral font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!--Nunito Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+  <script type="module" crossorigin src="/assets/script.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script.css">
+</head>
+
+<body class="indexMainFile  font-nunito relative ">
+
+
+
+
+
+
+
+
+    <!--Loader Section-->
+
+    <div class="h-screen bg-black absolute top-0 w-full z-50 flex justify-center items-center  blackPage">
+        <div class="overflow-hidden">
+            <h1 class="text-white text-3xl lg:text-6xl loadingText text-center">
+                <span class="inline-block">H</span>
+                <span class="inline-block">E</span>
+                <span class="inline-block">L</span>
+                <span class="inline-block">L</span>
+                <span class="inline-block">O</span>
+            </h1>
+        </div>
+        <div class="absolute top-full bg-red-400 w-full h-[0vh] redPage"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Navber section-->
+
+    <div
+        class="navBar flex justify-between py-5 px-12 md:py-8 md:px-24 fixed left-0 w-full 2xl:container 2xl:left-1/2 2xl:-translate-x-1/2 top-0 z-40  overflow-hidden h-auto">
+        <a href="/" class=""><img class="w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAUVBMVEUAAAAFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEFfw9EsAAAAGnRSTlMAQBDzgPoX6KEjlkru3tXOj4ptXVM3Lyt3dlKDiKcAAADGSURBVEjH7dW5EsIwDEXRZ8cKWci+gf//Q7EyVAmTzHMBFLmjUqdRI/iIYpElWxHILvR7ZGOQyWKQ36myKIr8GIm0G+S8F3OMEi9uh5JT5OXJo6B6GqkaaCRhRhqpKknUNaoMh5ytVU0cQlqpmjmE9ObD6kKht7rnHEJ+D+qWcghLsioOYdZjVCmHMKmqLYdgVDUdh1CqEhJhVMUiDIHQCL1EIDwkAsHJKZIdQityjHLnnMGmzH9Ap2UxCPZP/tOFvoHoItELE5063orQTpsAAAAASUVORK5CYII=" alt=""></a>
+        <ul class=" gap-12 hidden md:flex">
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="index.html">Home</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="about.html">About</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="service.html">Services</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="md:hidden menutoggle"> <i class=" ri-menu-fill text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <div class="hidden crossToggle"><i class=" ri-close-large-line text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <ul class="flex flex-col p-10 gap-3   md:hidden absolute top-20 left-0   w-full bg-white">
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="index.html">Home</a></li>
+            <li class="border-b-2 pb-2 "><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="about.html">About</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="service.html">Services</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Hero section section-1-->
+
+    <div class="heroSection container mx-auto py-36 flex flex-col md:flex-row relative overflow-hidden">
+        <div class="md:w-1/2 flex items-center relative">
+            <div class="flex flex-col gap-5 w-full">
+                <div class=" flex-col hidden md:flex">
+                    <div class=" relative self-center overflow-hidden pb-3">
+                        <h1 class=" text-4xl md:text-4xl lg:text-5xl  xl:text-6xl  font-bold text-blue-950 text-center">Pioneer
+                            digital
+                        </h1>
+                        <div class="absolute top-0 right-0 bg-red-400 w-full h-full p-9 textBox"></div>
+                    </div>
+                    <div class="self-center relative overflow-hidden pb-3">
+                        <p class=" text-4xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold text-blue-950 text-center">marketing
+                            agency
+                        </p>
+                        <div class="absolute top-0 right-0 bg-red-400 w-full h-full p-9 textBox"></div>
+                    </div>
+                </div>
+                <div class=" flex flex-col  md:hidden w-[100%] mx-auto">
+                    <div class=" relative self-center overflow-hidden pb-3">
+                        <h1 class=" text-4xl md:text-5xl xl:text-6xl  font-bold text-blue-950 text-center">Pioneer
+                            digital marketing
+                            agency
+                        </h1>
+                        <div class="absolute top-0 right-0 bg-red-400 w-full h-full p-9 textBox"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-blue-950 text-center font-semibold md:text-xl lg:text-2xl  md:mb-5 lg:mb-10">Based in
+                        Bangladesh.
+                    </p>
+                </div>
+                <a href="service.html"
+                    class=" px-5 py-3 sm:px-6 sm:py-4 sm:text-xl font-semibold  text-blue-950 border shadow-xl relative z-0  before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-blue-950 before:z-[-1] hover:before:h-full hover:text-white before:duration-700  hover:duration-700  hover:scale-x-110 self-center heroBtn bg-white">Let's
+                    work
+                    together</a>
+            </div>
+            <img src="data:image/png;base64,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" alt=""
+                class="absolute top-0 -left-10 -z-10 cross  duration-700  ease-linear">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAPFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADQLyYwAAAAFHRSTlMAUU0IFwU8EUNII1ouVykyDBw0N2LL0egAAALfSURBVHja7dxbztwgDAXgg8HmGiCZ/e+1+hdgpE5LoBWfeJuXCCmO5+AEf5W7jGA3hkEWm6EOs91FeWMKjuM4jv9OpYbdOGKpWMCFBk1NcIL3cfZFoLD5yR7vcwIYaPi2WIBzoYrdcPI4juP4fc5hO1GCYIXuoTI/a4FiQoTm8s5gFjvcDGIofAwWc7gcCRryNmMBshAHRY/ksEC4QR2bsfFkPcfxT7Nmw7w9uJ+1QDABmughKy6qNjwVCn+ZiEmKCQxFS0gF7/OEpMcbF13TehXS26D7QY9QMWbJ9h50kyE7vM/GYWvtGSuQ0Ia9ituupzv24mW/iNJmJw0L2FIxqMFMWOBKT9Aj5kQVk6QEDdOoBtvqMEn8NBrsVAuYxN9fZj22VUxS6LmgoXRfmIQdjzYjeCj4I/OyHskMRUg2M94XPEqCgiU6LNAKaL8zIDH7PYjWs9sNYAHFkGAJ3i9vd5kiNKbzhQXIDmqwJ+Mwh70MjeIN0/E+udESFJ3mRczREEPxST/rfenzsxRMM7Me6lCkhlvwvm7gIzRk5mU9hvTbM8ASFri4G2giZYcFxmWdsYTQjudSO7YKy9UNDx88oTQs4KIwFKnAB7yPs02DeEOmlR0rHx7UYJjhv99JrjuR/uNDBZPUZr+swbfHJKGlCxpqn4hJXLXfjbIgJUxSKQ3ijSddWIAYzw1NLRYLNHF5v0dhlf0il2MrfcPZykJCWIHHs5XR4n0uhwuaeNuMWRiq2Ac12AZymGI8CyFpTcTcElKDgsPMrOfyUNQHreJ9TuDjcBJpARd+1m7E7Pem83Ecv6GYuN1N3An3mjpLsUPhZFHEnK0naCjOy3pC9N+NssBiFuP8oJv8oleZn7f7jhUkSMR2dnwV7jiOf4BPjN1UKpmxgL0ZGoM1L8X4/GQ93ih+yU6JQ6rQtOCwQBWm/R6FbcNPbxzHcRx/rBiz3XmqNeiEzVgCG+xGzOXwN/0CiW8STmV8d8kAAAAASUVORK5CYII=" alt=""
+                class="hidden lg:block absolute bottom-10 right-36 -z-10 cross duration-700  ease-linear ">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAKCAYAAAAJtCiTAAACq0lEQVRIibXWWcjmYxgG8N9DwoEly6AoSgnJSA6mZEljrWFEZIsaJyjxHEwKTZY0BzcpnHAw2SKaYco2kiXlQEKy1RRFzWJpcDCjib/u5pma3ud9v973+8x18j+5nvu5/te9PWWodRMWYSu+xHq8WCK22YsYaj0BN2ApTsVh7bbf8TXexfMl4oe9rONQXIdlOH23F2nM/TgFx+EMHIg/8BAeKxH/dNEWJuRgrMat2Be/4XNsaZSjmo7DkXc/jZUl4s8u2MJ05N134V4cgu1Nx0/4poyQ05QrcR9Owke4qkT80kWen5jFWIfj8T4ezm+J+HeEtw/Ob6LPw49YXiK+6ILOT8eReBXn4Hs8iLUlYvtuTulO7Tq4Px5pjm5MkSXi5444m5iz8QYOwO0l4pmONAZDrSvwJHbgshLxcc+aScexLSknZkfgnhLx9yhvrDF7BLkNT7TyuqBEbOxI04m5EK9hZ/ZyifiwI82BodZz2+zbD1eUiA2T2ZMx1JpmvNfGxh0l4qlJ5DmNaT91PZ5FttPSEvFVR5oDQ63L8XKbW5eWiE8nsydjqPUsvNnmwTUlYt1E8hgMtZ6GDW243lQiXuhZMxhjV9BlrSeznG8uEWs7Un8mh9vK1r+bcfGspo6JmT/3No5uc3D1NMthqDXn5prWxjkz13ekEUxlTAueQ/AVHNHKOjfLJyViGOFluV+C3HZnIs24/P9au23Nv4406TM8gLdKxM4RXv7bkpacTOyvuLpEfNAFHYOpjWmXZaYexbXt7Jb29tnaVu8xzYyDWnU9jlUlYkcXbAEYas3Mr8KdrQr+aiZtait+UXuT5OrPxL2Eu0vE5mlvncmYPQzKVX5LW6UnI98micxKGvUOnptFyDx1ZKJuxEXNiKzmRL55vkVWx5oS8d1MgfEf6+DeOslycywAAAAASUVORK5CYII=" alt=""
+                class="absolute bottom-44 right-0 -z-10 cross duration-700  ease-linear">
+        </div>
+        <div class="md:w-1/2">
+            <div><img src="/assets/asset%2034.png" alt=""></div>
+        </div>
+        <a href="#imageSection" class="cursor-pointer absolute bottom-32 left-1/2 z-10 animate-bounce"><img
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16.031'%20height='27'%20viewBox='0%200%2016.031%2027'%3e%3cmetadata%3e%3c?xpacket%20begin='%20'%20id='W5M0MpCehiHzreSzNTczkc9d'?%3e%3cx:xmpmeta%20xmlns:x='adobe:ns:meta/'%20x:xmptk='Adobe%20XMP%20Core%205.6-c138%2079.159824,%202016/09/14-01:09:01%20'%3e%3crdf:RDF%20xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3e%3crdf:Description%20rdf:about=''/%3e%3c/rdf:RDF%3e%3c/x:xmpmeta%3e%3c?xpacket%20end='w'?%3e%3c/metadata%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill-rule:%20evenodd;%20}%20%3c/style%3e%3c/defs%3e%3cpath%20id='Forma_1_copy_7'%20data-name='Forma%201%20copy%207'%20class='cls-1'%20d='M959.654,780.944l-7.522-6.98a0.441,0.441,0,0,1-.108-0.507,0.5,0.5,0,0,1,.463-0.287h1a0.521,0.521,0,0,1,.354.136l5.161,4.789V754.559a0.485,0.485,0,0,1,.5-0.465h1a0.484,0.484,0,0,1,.5.465V778.1l5.161-4.789a0.524,0.524,0,0,1,.355-0.136h1a0.5,0.5,0,0,1,.463.287,0.429,0.429,0,0,1,.038.178,0.449,0.449,0,0,1-.147.329l-7.521,6.98A0.531,0.531,0,0,1,959.654,780.944Z'%20transform='translate(-952%20-754.094)'/%3e%3c/svg%3e" alt="" class=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Image section section-2-->
+
+    <div class="imageSection grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto font-fotura font-light px-4 lg:px-0 2xl:container 2xl:mx-auto"
+        id="imageSection">
+        <div class="upRow relative group overflow-hidden">
+            <img src="/assets/asset%2062.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Artificial Intelligence (AI) Revolution</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Automating
+                        tasks, enhancing decision-making, and transforming industries globally. </h1>
+                </div>
+            </div>
+        </div>
+        <div class="upRow relative group overflow-hidden">
+            <img src="/assets/asset%207.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Blockchain for Secure Transactions</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Ensures
+                        decentralized, transparent, and tamper-proof data and transactions.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="upRow relative group overflow-hidden">
+            <img src="/assets/asset%2082.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        5G Connectivity Unleashed</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Supercharges
+                        internet speeds, enabling real-time communication and innovation. </h1>
+                </div>
+            </div>
+        </div>
+        <div class="downRow relative group overflow-hidden">
+            <img src="/assets/asset%209.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Quantum Computing Breakthrough</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Solves complex
+                        problems exponentially faster than classical computers. </h1>
+                </div>
+            </div>
+        </div>
+        <div class="downRow relative group overflow-hidden">
+            <img src="/assets/asset%2010.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Edge Computing Advancement</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Processes data
+                        closer to the source, reducing latency significantly.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="downRow relative group overflow-hidden">
+            <img src="/assets/asset%2011.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Extended Reality (XR) Experiences</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Merges virtual
+                        and real worlds, enhancing immersive digital interactions. </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--who we are section section-3-->
+
+    <div class="parentDiv flex flex-col gap-5 px-5 sm:px-10 md:px-16 lg:px-32 2xl:w-[1500px] 2xl:mx-auto py-32 ">
+        <div class="childDiv relative overflow-hidden self-center  ">
+            <h1 class="text-center text-5xl font-bold text-blue-950 font-spectral">Who we are</h1>
+            <div class="overlayDiv absolute top-0 right-0 bg-red-400 w-full h-full "></div>
+        </div>
+        <p class="text-center sm:text-lg text-gray-500">Pioneer DigiDrive is the business vertical of Pioneer Publicity
+            Corporation which deals in digital branding
+            and marketing. Being an integrated digital marketing agency, we bring all the essential online visibility
+            solutions at one platform, driving you towards digital.</p>
+        <div class="readMoreBtn self-center">
+            <a href="about.html"
+                class="flex gap-3 bg-red-400 px-10 py-4 text-white self-center font-semibold border-red-300 border hover:bg-white hover:text-red-400 duration-500 transition-colors ">Read
+                More<i class="ri-arrow-right-line"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--what we do section section-4-->
+
+    <div
+        class="whatWeDo flex flex-col gap-10 px-5 sm:px-10 md:px-16 lg:px-32 2xl:container 2xl:mx-auto py-32 bg-blue-950  relative">
+        <div class="childDiv2 relative overflow-hidden self-center z-10 ">
+            <h1 class="text-center text-5xl font-bold text-white font-spectral ">What we do</h1>
+            <div class="overlayDiv2 absolute top-0 right-0 bg-white w-full h-full "></div>
+        </div>
+        <p class="text-center sm:text-lg text-white relative z-10">Our digital solutions are focused on enabling brands
+            to have an
+            edge over their competition.</p>
+        <div class="takeDemoBtn self-center   relative z-10">
+            <a href="service.html"
+                class="relative group inline-flex items-center px-10 py-4 overflow-hidden text-lg font-medium text-blue-950 hover:text-white group hover:bg-gray-50 bg-white">
+                <span
+                    class="absolute left-0 block w-full h-0 transition-all bg-red-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                <span
+                    class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </span>
+                <span
+                    class="relative text-base font-semibold transition-all duration-300 group-hover:-translate-x-3">Take
+                    a Demo</span>
+            </a>
+        </div>
+        <img src="/assets/asset%20122.png" class="object1  absolute w-[200px] left-0 top-0">
+        <img src="/assets/asset%2013.png" class="object1  absolute w-[200px] right-0 top-0">
+    </div>
+
+
+
+
+
+
+
+    <!--section-5-->
+
+    <div class="section5 container mx-auto py-36">
+        <h1 class="text-center uppercase text-red-400 font-spectral tracking-wider mb-5">Our Strength</h1>
+        <h2 class="text-center font-spectral text-5xl text-blue-950 mb-20">Why us?</h2>
+        <div class="lg:mx-20 flex flex-col gap-8">
+            <div class="whyUp flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="/assets/asset%2014.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-red-400 text-sm font-semibold tracking-widest">Digital Marketing</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                One-stop-shop for all digital
+                                marketing needs
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyUp flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="data:image/png;base64,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" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-green-400 text-sm font-semibold tracking-widest">Experience</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                65 years of trust & service
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="whyUp flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="/assets/asset%2016.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-blue-400 text-sm font-semibold tracking-widest">Digital Presence</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Improved digital presence & brand awareness.
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyDown flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="/assets/asset%2017.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-red-400 text-sm font-semibold tracking-widest">Customer Support</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Relentless customer support
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyDown flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="/assets/asset%2018.png" alt="" class="w-[80px]">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-orange-400 text-sm font-semibold tracking-widest">Conversion</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Higher conversion rates
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyDown flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="/assets/asset%2019.png" alt="" class="w-[80px]">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-green-400 text-sm font-semibold tracking-widest">Cost</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Cost-effective solutions
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Section 6-->
+
+    <div
+        class="instagram bg-[url('./Assets/asset33.png')] bg-cover bg-center py-28 bg-no-repeat sm:py-20 lg:py-28  2xl:container 2xl:mx-auto">
+
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <div class="flex flex-col gap-5 w-full">
+                <h1 class="telegramText text-center text-4xl lg:text-6xl  text-blue-950 font-bold ">Join our
+                    Instagram </h1>
+                <h1 class="telegramText text-center text-4xl lg:text-6xl  text-blue-950 font-bold">Community </h1>
+                <p class="telegramText text-center font-bold font-spectral text-lg tracking-wider text-white">Latest Posts</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--section7 card Section-->
+
+    <div class="cardSection container mx-auto py-28">
+        <!--Card Container-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-10 xl:gap-x-0 place-items-center gap-y-10">
+            <!--card-->
+            <div class="card1 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2020.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Doloremque velit sapien labore eius lopren itna</h1>
+                </div>
+            </div>
+            <div class=" card1 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2021.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">Officiis
+                        similiq repell partu arie error earum conubia</h1>
+                </div>
+            </div>
+            <div class=" card1 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2022.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">Morbi
+                        asperiores nascetur ligula cras blanditiis</h1>
+                </div>
+            </div>
+            <div class="card2 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2023.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">Why I
+                        say old chap that is spiffing jolly good a load</h1>
+                </div>
+            </div>
+            <div class="card2 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2024.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Doloremque velit sapien labore eius lopren itna</h1>
+                </div>
+            </div>
+            <div class="card2 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2025.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">The new
+                        camera king is coming will rock!</h1>
+                </div>
+            </div>
+            <div class="card3 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2026.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">Pay your
+                        bill to Phone to Pay Payments Bank in the!</h1>
+                </div>
+            </div>
+            <div class="card3 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="/assets/asset%2027.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">The new
+                        camera king is coming will rock the town!</h1>
+                </div>
+            </div>
+            <div class="card3 flex flex-col gap-3 max-w-[370px] sm:col-span-2 lg:col-span-1">
+                <div class="relative">
+                    <img src="/assets/asset%2028.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Doloremque velit sapien labore eius lopren itna</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Kickstart Section-8-->
+
+    <div
+        class="kickstart bg-[url('./Assets/asset34.png')] bg-no-repeat bg-cover bg-center  flex justify-center items-center  sm:py-20 lg:py-28 py-28  2xl:container 2xl:mx-auto">
+        <div class="conatiner mx-auto flex flex-col gap-10  ">
+            <div class="text1 text-center uppercase text-red-400 font-bold tracking-widest font-spectral">
+                Let's get started
+            </div>
+            <div class="text1 text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center">
+                All set to kickstart your digital journey?
+            </div>
+            <div class="text1 self-center">
+                <a href="contact.html"
+                    class="relative inline-flex items-center justify-center px-5 py-2 sm:px-10 sm:py-4 overflow-hidden font-foturalight2 font-bold tracking-widest text-black bg-white  group">
+                    <span
+                        class="absolute w-0 h-0 transition-all duration-300 ease-out bg-red-400 rounded-full group-hover:w-72 group-hover:h-72 "></span>
+
+                    <span class="relative group-hover:text-white duration-300">GET STARTED TODAY</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer section-->
+
+    <div
+        class="footer bg-[url('./Assets/asset35.png')] bg-no-repeat bg-cover bg-center sm:py-20 lg:py-28 py-28 2xl:container 2xl:mx-auto flex justify-center items-center">
+        <div class="container mx-auto text-white lg:px-10">
+            <!--upper div-->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b-2 border-gray-400 border-opacity-40">
+                <div class="upDiv flex flex-col gap-5">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAG3RSTlMAQBDzgProoS0VlkokHe7e1c6Pim1dUzcPd3Yv5aR+AAAAxUlEQVRIx+3VuRLCMAxF0efEyr7v4P//TyzKhEnmuQCK3FGp06gRXEChKCJ7I5Dd6PcoCkEmDUHuoMqiKKpzJDLskHVOzDmKndgDii+RkyePvJpopGqmkfhZaKSqJNHYqzIcslunauUQ8lZVxiHkifOrGYdQq2oqDqFqvEpqDiGLVeUMUqXHaHMOYVXVbRyCUdWPHEKpSkiERRWLMHtCI0wSgPCQAAQrl0gOCIPIOaqttQa7UvcBXZaGIER/8p9u9A1EF4hedEA9K1LUBlAAAAAASUVORK5CYII=" alt="" class="w-[30px]">
+                    <p class="text-lg text-gray-500">Lorem sum dolor sit ame consecuin ctetur adipiscing elit, sed do
+                        that me eiusmod tempor in lawis
+                    </p>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Contact Info<i
+                            class="ri-telegram-2-fill ml-2 "></i></h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300"
+                                href="#">www.digidrive.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Email:
+                                chirag@pioneerpublicityindia.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Phone: +91 85869
+                                79010</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Visit Us<i class="ri-map-pin-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Pioneer House -
+                                2C/6</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Rothak
+                                Road</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Karol Bagh, Nr.
+                                Liberty Cinema</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Delhi -
+                                110005</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">On Socials<i class="ri-share-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Facebook</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Twitter</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Youtube</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <!--lower div-->
+            <div class="flex flex-col gap-5 md:flex-row justify-between mt-5">
+                <h1 class="text-sm text-center md:text-lg font-bold text-gray-500">© Copyright 2024 DigiDrive||Created
+                    by Maruf Islam</h1>
+                <div class="flex gap-3 items-center text-center self-center">
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-dribbble-line"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-facebook-fill"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-twitter-x-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!--gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--scrolltrigger cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--main js-->
+</body>
+
+</html>

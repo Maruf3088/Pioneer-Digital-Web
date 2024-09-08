@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="output.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./Assets/favicon-32x32.png" type="image/x-icon">
+
+    <!--Remix icon-->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--Spectral font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 30px 40px;
+        }
+
+        .swiper-slide:nth-child(1n) {
+            background-color: #ffeaea;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            background-color: #ff725e;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            background-color: #ffe9cc;
+        }
+
+        .swiper-slide:nth-child(4n) {
+            background-color: #35c4a6;
+        }
+
+        .swiper-slide:nth-child(5n) {
+            background-color: #514c86;
+        }
+
+        .swiper-slide:nth-child(6n) {
+            background-color: rgb(194, 44, 77);
+        }
+
+        .swiper-slide:nth-child(7n) {
+            background-color: rgb(151, 192, 140);
+        }
+
+        .swiper-slide:nth-child(8n) {
+            background-color: rgb(117, 132, 174);
+        }
+
+        .swiper-slide:nth-child(9n) {
+            background-color: rgb(204, 161, 204);
+        }
+
+        .swiper-slide:nth-child(10n) {
+            background-color: rgb(59, 199, 138);
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body class="serviceMainFile font-nunito relative ">
+
+
+    <!--Loader Section-->
+
+    <div class="h-screen bg-black absolute top-0 w-full z-50 flex justify-center items-center  blackPage">
+        <div class="overflow-hidden">
+            <h1 class="text-white text-3xl lg:text-6xl loadingText text-center">
+                <span class="inline-block">Explore </span>
+                <span class="inline-block">Our </span>
+                <span class="inline-block">Services </span>
+                <!-- <span class="inline-block">Page</span> -->
+            </h1>
+        </div>
+        <div class="absolute top-full bg-red-400 w-full h-[0vh] redPage"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--Navber section-->
+
+    <div
+        class="navBar flex justify-between py-5 px-12 md:py-8 md:px-24 fixed left-0 w-full 2xl:container 2xl:left-1/2 2xl:-translate-x-1/2 top-0 z-40  overflow-hidden h-auto">
+        <a href="/" class=""><img class="w-7" src="./Assets/asset 0.png" alt=""></a>
+        <ul class=" gap-12 hidden md:flex">
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="index.html">Home</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="about.html">About</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="service.html">Services</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="md:hidden menutoggle"> <i class=" ri-menu-fill text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <div class="hidden crossToggle"><i class=" ri-close-large-line text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <ul class="flex flex-col p-10 gap-3   md:hidden absolute top-20 left-0   w-full bg-white">
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="index.html">Home</a></li>
+            <li class="border-b-2 pb-2 "><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="about.html">About</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="service.html">Services</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <!--service Hero section-->
+
+    <div
+        class="serviceHero bg-[#FFE9CC] py-40 flex justify-center items-center relative  2xl:container 2xl:mx-auto overflow-hidden">
+        <div class=" self-center w-[90%] sm:w-[70%] md:w-[65%] lg:w-[50%] xl:w-[45%]">
+            <h1 class="serviceHeroText text-center text-blue-950 text-3xl sm:text-4xl md:text-5xl
+            xl:text-6xl font-semibold ">Promoting
+                digital interactions while driving higher returns</h1>
+        </div>
+        <img src="./Service-Assets/asset 2.png" alt=""
+            class="serviceHeroImage1 absolute left-0 -bottom-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-auto">
+        <img src="./Service-Assets/asset 3.png" alt=""
+            class="serviceHeroImage2 absolute right-0 -bottom-3 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-auto">
+    </div>
+
+
+
+    <!--Service Main Section-->
+
+    <div class="serviceMainSection container mx-auto py-36">
+        <h1 class="serviceHeroText1 text-center uppercase text-red-400 tracking-widest font-bold font-spectral mb-5">Our
+            Services</h1>
+        <h1 class="serviceHeroText1 text-center text-4xl md:text-5xl font-spectral  font-semibold text-blue-950 mb-32">
+            Services We Provide</h1>
+
+
+        <!-- Card Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-y-16 gap-x-10">
+            <!-- Card 1 -->
+            <div class="scard1 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="./Service-Assets/asset 4.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Social Media Marketing</h1>
+                <p class="text-center text-gray-500 text-lg ">Looking forward to educating and engaging your
+                    audience...</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="scard1 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="./Service-Assets/asset 5.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Content Marketing</h1>
+                <p class="text-center text-gray-500 text-lg ">Searching for innovative ways to influence your
+                    target...</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="scard1 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="./Service-Assets/asset 6.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Paid Media</h1>
+                <p class="text-center text-gray-500 text-lg ">Compensating for your passive sales practices
+                    made...</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="scard2 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="./Service-Assets/asset 7.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Online PR + Influencer Marketing</h1>
+                <p class="text-center text-gray-500 text-lg ">Online PR on top of your list? Let our experts do
+                    it...</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="scard2 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="./Service-Assets/asset 8.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">SEO</h1>
+                <p class="text-center text-gray-500 text-lg ">Whether you're looking for a quick way to make
+                    your...</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="scard2 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="./Service-Assets/asset 9.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Web & App Development</h1>
+                <p class="text-center text-gray-500 text-lg ">With digital presence becoming the need of the
+                    hour...</p>
+            </div>
+            <!-- Last Card (Centered) -->
+            <div
+                class="scard2 flex flex-col justify-between gap-5 max-w-[350px] sm:col-span-2 lg:col-span-3 sm:mx-auto ">
+                <img src="./Service-Assets/asset 6.svg" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Digital Marketing Analytics</h1>
+                <p class="text-center text-gray-500 text-lg ">Convert user behavior into actionable data with
+                    our online analytics...</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--Card-->
+    <div class="smallCard xl:px-52 mx-4">
+        <div
+            class="container mx-auto bg-[#FFEAEA] flex flex-col md:flex-row px-5 sm:px-8 lg:px-10 lg:py-10 py-20 gap-5 relative ">
+            <div class="md:w-1/2 flex flex-col gap-8 justify-center">
+                <h1 class="smallCardText uppercase text-red-400 tracking-widest font-bold font-spectral ">Get in touch
+                </h1>
+                <h1 class="smallCardText text-3xl font-spectral  font-bold text-blue-950 ">Wanna discuss on your
+                    project?
+                </h1>
+                <p class="smallCardText text-gray-500 text-lg ">Duis aute irure dolor in reprehenderit in
+                    voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat. Attribution is appreciated and
+                    allows contributors to gain exposure.</p>
+                <div class="smallCardText self-start">
+                    <a href="contact.html"
+                        class="flex gap-3 bg-red-400 px-10 py-4 text-white self-center font-bold border-red-300 border hover:bg-white hover:text-red-400 duration-500 transition-colors ">Start
+                        Project<i class="ri-arrow-right-line"></i></a>
+                </div>
+
+            </div>
+            <div class="md:w-1/2 flex items-center">
+                <img src="./Service-Assets/asset 10.svg" alt="" class="smallCardImg">
+            </div>
+            <img src="./Service-Assets/asset 11.png" alt="" class="absolute -bottom-16 -right-32 -z-10 hidden xl:block">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Swiper section -->
+    <div class="container mx-auto flex flex-col gap-10 py-36 overflow-hidden">
+        <div class=" flex flex-col ">
+            <h1 class=" uppercase text-red-400 tracking-widest font-bold font-spectral mb-2 text-center ">Testimonials
+            </h1>
+            <h1 class=" text-4xl font-spectral  font-bold text-blue-950 text-center ">Love from Clients</h1>
+            <p class=" text-gray-500 text-lg font-semibold text-center">Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit
+                .</p>
+        </div>
+        <div class="swiper mySwiper w-full sm:w-[80%] lg:w-[60%] xl:w-[50%]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-blue-950 text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-bold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-blue-950 text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="./Service-Assets/asset 12.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--footer section-->
+
+    <div
+        class="footer bg-[url('./Assets/asset35.png')] bg-no-repeat bg-cover bg-center sm:py-20 lg:py-28 py-28 2xl:container 2xl:mx-auto flex justify-center items-center">
+        <div class="container mx-auto text-white lg:px-10">
+            <!--upper div-->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b-2 border-gray-400 border-opacity-40">
+                <div class="upDiv flex flex-col gap-5">
+                    <img src="./Assets/asset 29.png" alt="" class="w-[30px]">
+                    <p class="text-lg text-gray-500">Lorem sum dolor sit ame consecuin ctetur adipiscing elit, sed do
+                        that me eiusmod tempor in lawis
+                    </p>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Contact Info<i
+                            class="ri-telegram-2-fill ml-2 "></i></h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300"
+                                href="#">www.digidrive.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Email:
+                                chirag@pioneerpublicityindia.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Phone: +91 85869
+                                79010</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Visit Us<i class="ri-map-pin-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Pioneer House -
+                                2C/6</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Rothak
+                                Road</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Karol Bagh, Nr.
+                                Liberty Cinema</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Delhi -
+                                110005</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">On Socials<i class="ri-share-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Facebook</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Twitter</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Youtube</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <!--lower div-->
+            <div class="flex flex-col gap-5 md:flex-row justify-between mt-5">
+                <h1 class="text-sm text-center md:text-lg font-bold text-gray-500">© Copyright 2024 DigiDrive||Created
+                    by Maruf Islam</h1>
+                <div class="flex gap-3 items-center text-center self-center">
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-dribbble-line"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-facebook-fill"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-twitter-x-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--scrolltrigger cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    <!--main js-->
+    <script src="/script.js" type="module"></script>
+
+
+</body>
+
+</html>

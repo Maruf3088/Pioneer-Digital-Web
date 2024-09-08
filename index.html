@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Digital</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="output.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./Assets/favicon-32x32.png" type="image/x-icon">
+
+
+    <!--Remix icon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--Spectral font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!--Nunito Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="indexMainFile  font-nunito relative ">
+
+
+
+
+
+
+
+
+    <!--Loader Section-->
+
+    <div class="h-screen bg-black absolute top-0 w-full z-50 flex justify-center items-center  blackPage">
+        <div class="overflow-hidden">
+            <h1 class="text-white text-3xl lg:text-6xl loadingText text-center">
+                <span class="inline-block">H</span>
+                <span class="inline-block">E</span>
+                <span class="inline-block">L</span>
+                <span class="inline-block">L</span>
+                <span class="inline-block">O</span>
+            </h1>
+        </div>
+        <div class="absolute top-full bg-red-400 w-full h-[0vh] redPage"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Navber section-->
+
+    <div
+        class="navBar flex justify-between py-5 px-12 md:py-8 md:px-24 fixed left-0 w-full 2xl:container 2xl:left-1/2 2xl:-translate-x-1/2 top-0 z-40  overflow-hidden h-auto">
+        <a href="/" class=""><img class="w-7" src="./Assets/asset 0.png" alt=""></a>
+        <ul class=" gap-12 hidden md:flex">
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="index.html">Home</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="about.html">About</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="service.html">Services</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="md:hidden menutoggle"> <i class=" ri-menu-fill text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <div class="hidden crossToggle"><i class=" ri-close-large-line text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <ul class="flex flex-col p-10 gap-3   md:hidden absolute top-20 left-0   w-full bg-white">
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="index.html">Home</a></li>
+            <li class="border-b-2 pb-2 "><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="about.html">About</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="service.html">Services</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Hero section section-1-->
+
+    <div class="heroSection container mx-auto py-36 flex flex-col md:flex-row relative overflow-hidden">
+        <div class="md:w-1/2 flex items-center relative">
+            <div class="flex flex-col gap-5 w-full">
+                <div class=" flex-col hidden md:flex">
+                    <div class=" relative self-center overflow-hidden pb-3">
+                        <h1 class=" text-4xl md:text-4xl lg:text-5xl  xl:text-6xl  font-bold text-blue-950 text-center">
+                            Pioneer
+                            digital
+                        </h1>
+                        <div class="absolute top-0 right-0 bg-red-400 w-full h-full p-9 textBox"></div>
+                    </div>
+                    <div class="self-center relative overflow-hidden pb-3">
+                        <p class=" text-4xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold text-blue-950 text-center">
+                            marketing
+                            agency
+                        </p>
+                        <div class="absolute top-0 right-0 bg-red-400 w-full h-full p-9 textBox"></div>
+                    </div>
+                </div>
+                <div class=" flex flex-col  md:hidden w-[100%] mx-auto">
+                    <div class=" relative self-center overflow-hidden pb-3">
+                        <h1 class=" text-4xl md:text-5xl xl:text-6xl  font-bold text-blue-950 text-center">Pioneer
+                            digital marketing
+                            agency
+                        </h1>
+                        <div class="absolute top-0 right-0 bg-red-400 w-full h-full p-9 textBox"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-blue-950 text-center font-semibold md:text-xl lg:text-2xl  md:mb-5 lg:mb-10">Based in
+                        Bangladesh.
+                    </p>
+                </div>
+                <a href="service.html"
+                    class=" px-5 py-3 sm:px-6 sm:py-4 sm:text-xl font-semibold  text-blue-950 border shadow-xl relative z-0  before:absolute before:top-0 before:left-0 before:w-full before:h-0 before:bg-blue-950 before:z-[-1] hover:before:h-full hover:text-white before:duration-700  hover:duration-700  hover:scale-x-110 self-center heroBtn bg-white">Let's
+                    work
+                    together</a>
+            </div>
+            <img src="./Assets/asset 1.png" alt=""
+                class="absolute top-0 -left-10 -z-10 cross  duration-700  ease-linear">
+            <img src="./Assets/asset 2.png" alt=""
+                class="hidden lg:block absolute bottom-10 right-36 -z-10 cross duration-700  ease-linear ">
+            <img src="./Assets/asset 4.png" alt=""
+                class="absolute bottom-44 right-0 -z-10 cross duration-700  ease-linear">
+        </div>
+        <div class="md:w-1/2">
+            <div><img src="./Assets/asset 3.png" alt=""></div>
+        </div>
+        <a href="#imageSection" class="cursor-pointer absolute bottom-32 left-1/2 z-10 animate-bounce"><img
+                src="./Assets/asset 5.svg" alt="" class=""></a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Image section section-2-->
+
+    <div class="imageSection grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto font-fotura font-light px-4 lg:px-0 2xl:container 2xl:mx-auto"
+        id="imageSection">
+        <div class="upRow relative group overflow-hidden">
+            <img src="./Assets/asset 6.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Artificial Intelligence (AI) Revolution</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Automating
+                        tasks, enhancing decision-making, and transforming industries globally. </h1>
+                </div>
+            </div>
+        </div>
+        <div class="upRow relative group overflow-hidden">
+            <img src="./Assets/asset 7.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Blockchain for Secure Transactions</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Ensures
+                        decentralized, transparent, and tamper-proof data and transactions.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="upRow relative group overflow-hidden">
+            <img src="./Assets/asset 8.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        5G Connectivity Unleashed</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Supercharges
+                        internet speeds, enabling real-time communication and innovation. </h1>
+                </div>
+            </div>
+        </div>
+        <div class="downRow relative group overflow-hidden">
+            <img src="./Assets/asset 9.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Quantum Computing Breakthrough</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Solves complex
+                        problems exponentially faster than classical computers. </h1>
+                </div>
+            </div>
+        </div>
+        <div class="downRow relative group overflow-hidden">
+            <img src="./Assets/asset 10.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Edge Computing Advancement</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Processes data
+                        closer to the source, reducing latency significantly.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="downRow relative group overflow-hidden">
+            <img src="./Assets/asset 11.png" alt="" class="w-full md:group-hover:scale-110 md:duration-700 ">
+            <div
+                class="absolute top-0 right-0 bg-red-400 w-full h-full opacity-20 md:opacity-0 md:group-hover:opacity-50 duration-700">
+            </div>
+            <div class="absolute bottom-5 left-5 md:bottom-10 md:left-10">
+                <div class="overflow-hidden mb-5">
+                    <h1
+                        class="text-2xl sm:text-3xl lg:text-4xl text-white font-bold md:translate-y-full group-hover:-translate-y-0 duration-700">
+                        Extended Reality (XR) Experiences</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class=" text-white  md:translate-y-full group-hover:-translate-y-0 duration-700">Merges virtual
+                        and real worlds, enhancing immersive digital interactions. </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--who we are section section-3-->
+
+    <div class="parentDiv flex flex-col gap-5 px-5 sm:px-10 md:px-16 lg:px-32 2xl:w-[1500px] 2xl:mx-auto py-32 ">
+        <div class="childDiv relative overflow-hidden self-center  ">
+            <h1 class="text-center text-5xl font-bold text-blue-950 font-spectral">Who we are</h1>
+            <div class="overlayDiv absolute top-0 right-0 bg-red-400 w-full h-full "></div>
+        </div>
+        <p class="text-center sm:text-lg text-gray-500">Pioneer DigiDrive is the business vertical of Pioneer Publicity
+            Corporation which deals in digital branding
+            and marketing. Being an integrated digital marketing agency, we bring all the essential online visibility
+            solutions at one platform, driving you towards digital.</p>
+        <div class="readMoreBtn self-center">
+            <a href="about.html"
+                class="flex gap-3 bg-red-400 px-10 py-4 text-white self-center font-semibold border-red-300 border hover:bg-white hover:text-red-400 duration-500 transition-colors ">Read
+                More<i class="ri-arrow-right-line"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--what we do section section-4-->
+
+    <div
+        class="whatWeDo flex flex-col gap-10 px-5 sm:px-10 md:px-16 lg:px-32 2xl:container 2xl:mx-auto py-32 bg-blue-950  relative">
+        <div class="childDiv2 relative overflow-hidden self-center z-10 ">
+            <h1 class="text-center text-5xl font-bold text-white font-spectral ">What we do</h1>
+            <div class="overlayDiv2 absolute top-0 right-0 bg-white w-full h-full "></div>
+        </div>
+        <p class="text-center sm:text-lg text-white relative z-10">Our digital solutions are focused on enabling brands
+            to have an
+            edge over their competition.</p>
+        <div class="takeDemoBtn self-center   relative z-10">
+            <a href="service.html"
+                class="relative group inline-flex items-center px-10 py-4 overflow-hidden text-lg font-medium text-blue-950 hover:text-white group hover:bg-gray-50 bg-white">
+                <span
+                    class="absolute left-0 block w-full h-0 transition-all bg-red-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                <span
+                    class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </span>
+                <span
+                    class="relative text-base font-semibold transition-all duration-300 group-hover:-translate-x-3">Take
+                    a Demo</span>
+            </a>
+        </div>
+        <img src="./Assets/asset 12.png" class="object1  absolute w-[200px] left-0 top-0">
+        <img src="./Assets/asset 13.png" class="object1  absolute w-[200px] right-0 top-0">
+    </div>
+
+
+
+
+
+
+
+    <!--section-5-->
+
+    <div class="section5 container mx-auto py-36">
+        <h1 class="text-center uppercase text-red-400 font-spectral tracking-wider mb-5">Our Strength</h1>
+        <h2 class="text-center font-spectral text-5xl text-blue-950 mb-20">Why us?</h2>
+        <div class="lg:mx-20 flex flex-col gap-8">
+            <div class="whyUp flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="./Assets/asset 14.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-red-400 text-sm font-semibold tracking-widest">Digital Marketing</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                One-stop-shop for all digital
+                                marketing needs
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyUp flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="./Assets/asset 15.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-green-400 text-sm font-semibold tracking-widest">Experience</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                65 years of trust & service
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="whyUp flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="./Assets/asset 16.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-blue-400 text-sm font-semibold tracking-widest">Digital Presence</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Improved digital presence & brand awareness.
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyDown flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="./Assets/asset 17.png" alt="">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-red-400 text-sm font-semibold tracking-widest">Customer Support</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Relentless customer support
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyDown flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="./Assets/asset 18.png" alt="" class="w-[80px]">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-orange-400 text-sm font-semibold tracking-widest">Conversion</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Higher conversion rates
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+            <div class="whyDown flex flex-col md:flex-row justify-between  gap-5 pb-5  border-b-2  ">
+                <div class="flex items-center gap-5">
+                    <img src="./Assets/asset 19.png" alt="" class="w-[80px]">
+                    <div class="flex flex-col gap-2">
+                        <p class="uppercase text-green-400 text-sm font-semibold tracking-widest">Cost</p>
+                        <div class="overflow-hidden relative group">
+                            <h1
+                                class="font-spectral text-black text-xl lg:text-2xl md:group-hover:text-white duration-500 relative z-10">
+                                Cost-effective solutions
+                            </h1>
+                            <div class="absolute top-0 left-0 bg-black  w-0 h-full md:group-hover:w-full  duration-500">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-start md:self-center">
+                    <button class="flex gap-3 hover:text-red-400 duration-500 group">READ MORE<svg
+                            class="w-5 h-5 group-hover:translate-x-1 duration-500 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Section 6-->
+
+    <div
+        class="instagram bg-[url('./Assets/asset33.png')] bg-cover bg-center py-28 bg-no-repeat sm:py-20 lg:py-28  2xl:container 2xl:mx-auto">
+
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <div class="flex flex-col gap-5 w-full">
+                <h1 class="telegramText text-center text-4xl lg:text-6xl  text-blue-950 font-bold ">Join our
+                    Instagram </h1>
+                <h1 class="telegramText text-center text-4xl lg:text-6xl  text-blue-950 font-bold">Community </h1>
+                <p class="telegramText text-center font-bold font-spectral text-lg tracking-wider text-white">Latest
+                    Posts</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--section7 card Section-->
+
+    <div class="cardSection container mx-auto py-28">
+        <!--Card Container-->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-10 xl:gap-x-0 place-items-center gap-y-10">
+            <!--card-->
+            <div class="card1 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 20.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Doloremque velit sapien labore eius lopren itna</h1>
+                </div>
+            </div>
+            <div class=" card1 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 21.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Officiis
+                        similiq repell partu arie error earum conubia</h1>
+                </div>
+            </div>
+            <div class=" card1 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 22.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Morbi
+                        asperiores nascetur ligula cras blanditiis</h1>
+                </div>
+            </div>
+            <div class="card2 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 23.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">Why
+                        I
+                        say old chap that is spiffing jolly good a load</h1>
+                </div>
+            </div>
+            <div class="card2 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 24.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Doloremque velit sapien labore eius lopren itna</h1>
+                </div>
+            </div>
+            <div class="card2 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 25.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">The
+                        new
+                        camera king is coming will rock!</h1>
+                </div>
+            </div>
+            <div class="card3 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 26.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">Pay
+                        your
+                        bill to Phone to Pay Payments Bank in the!</h1>
+                </div>
+            </div>
+            <div class="card3 flex flex-col gap-3 max-w-[370px]">
+                <div class="relative">
+                    <img src="./Assets/asset 27.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">The
+                        new
+                        camera king is coming will rock the town!</h1>
+                </div>
+            </div>
+            <div class="card3 flex flex-col gap-3 max-w-[370px] sm:col-span-2 lg:col-span-1">
+                <div class="relative">
+                    <img src="./Assets/asset 28.png" alt="" class="w-full">
+                    <div
+                        class="size-16 bg-red-400 rounded-lg p-5 flex justify-center items-center text-center text-white font-bold text-xl absolute top-5 left-5">
+                        25 <br>MAR</div>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2  items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-user-line"></i>By Justin Trada</div>
+                    <div class="flex gap-2 items-center cursor-pointer hover:text-red-400 duration-500"><i
+                            class="ri-message-2-line"></i>03 Comments</div>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-blue-950 font-semibold cursor-pointer hover:text-red-400 duration-500">
+                        Doloremque velit sapien labore eius lopren itna</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Kickstart Section-8-->
+
+    <div
+        class="kickstart bg-[url('./Assets/asset34.png')] bg-no-repeat bg-cover bg-center  flex justify-center items-center  sm:py-20 lg:py-28 py-28  2xl:container 2xl:mx-auto">
+        <div class="conatiner mx-auto flex flex-col gap-10  ">
+            <div class="text1 text-center uppercase text-red-400 font-bold tracking-widest font-spectral">
+                Let's get started
+            </div>
+            <div class="text1 text-white font-bold text-3xl md:text-4xl lg:text-5xl text-center">
+                All set to kickstart your digital journey?
+            </div>
+            <div class="text1 self-center">
+                <a href="contact.html"
+                    class="relative inline-flex items-center justify-center px-5 py-2 sm:px-10 sm:py-4 overflow-hidden font-foturalight2 font-bold tracking-widest text-black bg-white  group">
+                    <span
+                        class="absolute w-0 h-0 transition-all duration-300 ease-out bg-red-400 rounded-full group-hover:w-72 group-hover:h-72 "></span>
+
+                    <span class="relative group-hover:text-white duration-300">GET STARTED TODAY</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer section-->
+
+    <div
+        class="footer bg-[url('./Assets/asset35.png')] bg-no-repeat bg-cover bg-center sm:py-20 lg:py-28 py-28 2xl:container 2xl:mx-auto flex justify-center items-center">
+        <div class="container mx-auto text-white lg:px-10">
+            <!--upper div-->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b-2 border-gray-400 border-opacity-40">
+                <div class="upDiv flex flex-col gap-5">
+                    <img src="./Assets/asset 29.png" alt="" class="w-[30px]">
+                    <p class="text-lg text-gray-500">Lorem sum dolor sit ame consecuin ctetur adipiscing elit, sed do
+                        that me eiusmod tempor in lawis
+                    </p>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Contact Info<i
+                            class="ri-telegram-2-fill ml-2 "></i></h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300"
+                                href="#">www.digidrive.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Email:
+                                chirag@pioneerpublicityindia.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Phone: +91 85869
+                                79010</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Visit Us<i class="ri-map-pin-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Pioneer House -
+                                2C/6</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Rothak
+                                Road</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Karol Bagh, Nr.
+                                Liberty Cinema</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Delhi -
+                                110005</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">On Socials<i class="ri-share-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Facebook</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Twitter</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Youtube</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <!--lower div-->
+            <div class="flex flex-col gap-5 md:flex-row justify-between mt-5">
+                <h1 class="text-sm text-center md:text-lg font-bold text-gray-500">© Copyright 2024 DigiDrive||Created
+                    by Maruf Islam</h1>
+                <div class="flex gap-3 items-center text-center self-center">
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-dribbble-line"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-facebook-fill"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-twitter-x-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!--gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--scrolltrigger cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!--main js-->
+    <script src="/script.js" type="module"></script>
+</body>
+
+</html>

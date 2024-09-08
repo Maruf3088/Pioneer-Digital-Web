@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+
+    <!--CSS-->
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon-32x32.png" type="image/x-icon">
+
+    <!--Remix icon-->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--Spectral font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 30px 40px;
+        }
+
+        .swiper-slide:nth-child(1n) {
+            background-color: #ffeaea;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            background-color: #ff725e;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            background-color: #ffe9cc;
+        }
+
+        .swiper-slide:nth-child(4n) {
+            background-color: #35c4a6;
+        }
+
+        .swiper-slide:nth-child(5n) {
+            background-color: #514c86;
+        }
+
+        .swiper-slide:nth-child(6n) {
+            background-color: rgb(194, 44, 77);
+        }
+
+        .swiper-slide:nth-child(7n) {
+            background-color: rgb(151, 192, 140);
+        }
+
+        .swiper-slide:nth-child(8n) {
+            background-color: rgb(117, 132, 174);
+        }
+
+        .swiper-slide:nth-child(9n) {
+            background-color: rgb(204, 161, 204);
+        }
+
+        .swiper-slide:nth-child(10n) {
+            background-color: rgb(59, 199, 138);
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+  <script type="module" crossorigin src="/assets/script.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script.css">
+</head>
+
+<body class="serviceMainFile font-nunito relative ">
+
+
+    <!--Loader Section-->
+
+    <div class="h-screen bg-black absolute top-0 w-full z-50 flex justify-center items-center  blackPage">
+        <div class="overflow-hidden">
+            <h1 class="text-white text-3xl lg:text-6xl loadingText text-center">
+                <span class="inline-block">Explore </span>
+                <span class="inline-block">Our </span>
+                <span class="inline-block">Services </span>
+                <!-- <span class="inline-block">Page</span> -->
+            </h1>
+        </div>
+        <div class="absolute top-full bg-red-400 w-full h-[0vh] redPage"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--Navber section-->
+
+    <div
+        class="navBar flex justify-between py-5 px-12 md:py-8 md:px-24 fixed left-0 w-full 2xl:container 2xl:left-1/2 2xl:-translate-x-1/2 top-0 z-40  overflow-hidden h-auto">
+        <a href="/" class=""><img class="w-7" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAUVBMVEUAAAAFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEEFFEFfw9EsAAAAGnRSTlMAQBDzgPoX6KEjlkru3tXOj4ptXVM3Lyt3dlKDiKcAAADGSURBVEjH7dW5EsIwDEXRZ8cKWci+gf//Q7EyVAmTzHMBFLmjUqdRI/iIYpElWxHILvR7ZGOQyWKQ36myKIr8GIm0G+S8F3OMEi9uh5JT5OXJo6B6GqkaaCRhRhqpKknUNaoMh5ytVU0cQlqpmjmE9ObD6kKht7rnHEJ+D+qWcghLsioOYdZjVCmHMKmqLYdgVDUdh1CqEhJhVMUiDIHQCL1EIDwkAsHJKZIdQityjHLnnMGmzH9Ap2UxCPZP/tOFvoHoItELE5063orQTpsAAAAASUVORK5CYII=" alt=""></a>
+        <ul class=" gap-12 hidden md:flex">
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="index.html">Home</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="about.html">About</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="service.html">Services</a></li>
+            <li><a class="text-xl text-blue-950 hover:text-red-400 duration-300" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="md:hidden menutoggle"> <i class=" ri-menu-fill text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <div class="hidden crossToggle"><i class=" ri-close-large-line text-3xl cursor-pointer hover:text-red-400 "></i>
+        </div>
+        <ul class="flex flex-col p-10 gap-3   md:hidden absolute top-20 left-0   w-full bg-white">
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="index.html">Home</a></li>
+            <li class="border-b-2 pb-2 "><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="about.html">About</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="service.html">Services</a></li>
+            <li class="border-b-2 pb-2"><a class="text-xl text-blue-950 hover:text-red-400 duration-300"
+                    href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <!--service Hero section-->
+
+    <div
+        class="serviceHero bg-[#FFE9CC] py-40 flex justify-center items-center relative  2xl:container 2xl:mx-auto overflow-hidden">
+        <div class=" self-center w-[90%] sm:w-[70%] md:w-[65%] lg:w-[50%] xl:w-[45%]">
+            <h1 class="serviceHeroText text-center text-blue-950 text-3xl sm:text-4xl md:text-5xl
+            xl:text-6xl font-semibold ">Promoting
+                digital  interactions while driving  higher returns</h1>
+        </div>
+        <img src="/assets/asset%202.png" alt=""
+            class="serviceHeroImage1 absolute left-0 -bottom-0 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-auto">
+        <img src="/assets/asset%203.png" alt=""
+            class="serviceHeroImage2 absolute right-0 -bottom-3 w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] xl:w-auto">
+    </div>
+
+
+
+    <!--Service Main Section-->
+
+    <div class="serviceMainSection container mx-auto py-36">
+        <h1 class="serviceHeroText1 text-center uppercase text-red-400 tracking-widest font-bold font-spectral mb-5">Our
+            Services</h1>
+        <h1 class="serviceHeroText1 text-center text-4xl md:text-5xl font-spectral  font-semibold text-blue-950 mb-32">
+            Services We Provide</h1>
+
+
+        <!-- Card Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-y-16 gap-x-10">
+            <!-- Card 1 -->
+            <div class="scard1 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='176'%20viewBox='0%200%20100%2088'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='1327'%20y='1092'%20width='100'%20height='88'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='1327'%20y='1092'%20width='100'%20height='88'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwIiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMTAwIDg4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjYiIHgyPSI5NCIgeTI9Ijg4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZkNTM5MiIgc3RvcC1vcGFjaXR5PSIwLjk5NiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmODZmNjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI4OCIvPgo8L3N2Zz4K'/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M1416.21,1092h-78.42a10.793,10.793,0,0,0-10.79,10.78v66.44a10.793,10.793,0,0,0,10.79,10.78h78.42a10.793,10.793,0,0,0,10.79-10.78v-66.44A10.793,10.793,0,0,0,1416.21,1092Zm8.21,77.22a8.215,8.215,0,0,1-8.21,8.21h-78.42a8.215,8.215,0,0,1-8.21-8.21v-51.38h94.84v51.38Zm0-53.95h-94.84v-12.49a8.215,8.215,0,0,1,8.21-8.21h78.42a8.215,8.215,0,0,1,8.21,8.21v12.49Zm-69.38-15.14a4.885,4.885,0,1,0,4.89,4.89A4.889,4.889,0,0,0,1355.04,1100.13Zm0,7.19a2.305,2.305,0,1,1,2.32-2.3A2.309,2.309,0,0,1,1355.04,1107.32Zm-16.17-7.24a4.885,4.885,0,1,0,4.89,4.88A4.9,4.9,0,0,0,1338.87,1100.08Zm0,7.19a2.305,2.305,0,1,1,2.31-2.31A2.311,2.311,0,0,1,1338.87,1107.27Zm32.35-7.08a4.88,4.88,0,1,0,4.89,4.88A4.882,4.882,0,0,0,1371.22,1100.19Zm0,7.18a2.305,2.305,0,1,1,2.31-2.3A2.3,2.3,0,0,1,1371.22,1107.37Zm45.75,24.27a5.716,5.716,0,0,0-8.08,0l-22.27,22.23a1.192,1.192,0,0,0-.15.18,0.435,0.435,0,0,1-.04.07,1.084,1.084,0,0,0-.08.19,0.207,0.207,0,0,1-.02.06l-2.79,9.25a1.127,1.127,0,0,0,.75,1.4,1.2,1.2,0,0,0,.65,0l9.27-2.78a0.219,0.219,0,0,1,.05-0.03,0.926,0.926,0,0,0,.2-0.08c0.02-.01.03-0.02,0.05-0.03a1,1,0,0,0,.2-0.16l22.26-22.23A5.7,5.7,0,0,0,1416.97,1131.64Zm-30.68,30.62,1.65-5.48,3.85,3.83Zm29.16-24.19a0.435,0.435,0,0,1-.07.06l-0.27.27-21.2,21.16-4.91-4.9,21.48-21.44A3.472,3.472,0,0,1,1415.45,1138.07Zm-46.78,7.92H1340a1.12,1.12,0,1,0,0,2.24h28.67A1.12,1.12,0,0,0,1368.67,1145.99Zm-28.68,10.66h28.67a1.12,1.12,0,1,0,0-2.24h-28.67A1.12,1.12,0,0,0,1339.99,1156.65Zm28.68,6.17h-28.68a1.12,1.12,0,0,0,0,2.24h28.68A1.12,1.12,0,0,0,1368.67,1162.82Zm0-33.66H1340a1.125,1.125,0,1,0,0,2.25h28.67A1.125,1.125,0,0,0,1368.67,1129.16Zm-28.68,10.66h28.67a1.12,1.12,0,1,0,0-2.24h-28.67A1.12,1.12,0,0,0,1339.99,1139.82Z'%20transform='translate(-1327%20-1092)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Social Media Marketing</h1>
+                <p class="text-center text-gray-500 text-lg ">Looking forward to educating and engaging your
+                    audience...</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="scard1 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='206'%20height='180'%20viewBox='0%200%20103%2090'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='491'%20y='778'%20width='103'%20height='90'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='491'%20y='778'%20width='103'%20height='90'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAzIiBoZWlnaHQ9IjkwIiB2aWV3Qm94PSIwIDAgMTAzIDkwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjYuNSIgeDI9Ijk2LjUiIHkyPSI5MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUzOTIiIHN0b3Atb3BhY2l0eT0iMC45OTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjg2ZjY0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIxMDMiIGhlaWdodD0iOTAiLz4KPC9zdmc+Cg=='/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M589.252,829.808a47.681,47.681,0,0,0-12.124-31.451,47.033,47.033,0,0,0-17.679-12.337l-3.436-1.355h14.248v-1.858h-22.1V778H536.841v4.808h-22.1v1.858h14.249l-3.438,1.355a47.011,47.011,0,0,0-17.678,12.337,47.682,47.682,0,0,0-12.125,31.451l0,0.7H491v11.474h11.318V830.5h-4.744l0.006-.707a45.822,45.822,0,0,1,11.648-30.19,44.794,44.794,0,0,1,26.823-14.472l0.79-.115v4.454h11.317v-4.455l0.791,0.116a44.787,44.787,0,0,1,26.822,14.472,45.815,45.815,0,0,1,11.648,30.19l0.006,0.707h-4.743v11.474H594V830.5h-4.742Zm-88.767,2.554v7.757h-7.651v-7.757h7.651Zm45.84-44.748h-7.651v-7.756h7.651v7.756Zm45.841,52.505h-7.651v-7.757h7.651v7.757Zm-13.31-50.646a5.738,5.738,0,1,0-5.658-5.737A5.7,5.7,0,0,0,578.856,789.473Zm0-9.615a3.878,3.878,0,1,1-3.825,3.878A3.857,3.857,0,0,1,578.856,779.858Zm-72.713,9.615a5.738,5.738,0,1,0-5.658-5.737A5.7,5.7,0,0,0,506.143,789.473Zm0-9.615a3.878,3.878,0,1,1-3.825,3.878A3.857,3.857,0,0,1,506.143,779.858ZM527.384,868h30.231v-1.859H527.384V868Zm3.134-7.1v2.263h1.833v-2.744l-7.761-14.165,17.91-30.262,17.91,30.262-7.762,14.165v2.744h1.834V860.9l8.045-14.682L542.5,812.378l-20.028,33.839Zm11.065,2.263h1.834v-16h1.552v-1.859H540.03v1.859h1.553v16Z'%20transform='translate(-491%20-778)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Content Marketing</h1>
+                <p class="text-center text-gray-500 text-lg ">Searching for innovative ways to influence your
+                    target...</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="scard1 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='180'%20height='180'%20viewBox='0%200%2090%2090'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='915'%20y='778'%20width='90'%20height='90'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='915'%20y='778'%20width='90'%20height='90'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHZpZXdCb3g9IjAgMCA5MCA5MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI5MCIgeTE9IjkwIiB4Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUzOTIiIHN0b3Atb3BhY2l0eT0iMC45OTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjg2ZjY0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIvPgo8L3N2Zz4K'/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M996.5,797.124h8.5V778H985.875v8.506h-51.75V778H915v19.125h8.5v51.75H915V868h19.125v-8.5h51.75V868H1005V848.874h-8.5v-51.75Zm-79.38-2.115V780.114H932.01v14.895H917.115Zm14.895,70.875H917.115V850.989H932.01v14.895Zm53.865-17.01v8.5h-51.75v-8.5h-8.5v-51.75h8.5v-8.5h51.75v8.5h8.5v51.75h-8.5Zm17.015,2.115v14.895h-14.9V850.989h14.9Zm-14.9-55.98V780.114h14.9v14.895h-14.9Z'%20transform='translate(-915%20-778)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Paid Media</h1>
+                <p class="text-center text-gray-500 text-lg ">Compensating for your passive sales practices
+                    made...</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="scard2 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='178'%20height='200'%20viewBox='0%200%2089%20100'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='1332'%20y='773'%20width='89'%20height='100'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='1332'%20y='773'%20width='89'%20height='100'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODkiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgODkgMTAwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9Ijg5IiB5MT0iOTQuNSIgeDI9IjAiIHkyPSI1LjUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmQ1MzkyIiBzdG9wLW9wYWNpdHk9IjAuOTk2Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y4NmY2NCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iODkiIGhlaWdodD0iMTAwIi8+Cjwvc3ZnPgo='/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M1393.15,817.062A27.968,27.968,0,1,0,1421,845.03,27.936,27.936,0,0,0,1393.15,817.062Zm1.07,2.161,0.42,0.024a25.744,25.744,0,0,1,24.18,24.285l0.03,0.427h-24.63V819.223Zm16.02,45.087a25.77,25.77,0,1,1-18.58-45.063l0.43-.024V845.03a1.072,1.072,0,0,0,.31.757l18.16,18.239Zm8.58-17.783a25.957,25.957,0,0,1-6.47,15.666l-0.28.319L1395.73,846.1h23.12Zm-57.56,1.543a37.186,37.186,0,0,1-17.36-60.923l0.29-.309,26.46,26.585h37.4l-0.02.421c-0.03.678-.07,1.338-0.13,1.963a1.065,1.065,0,1,0,2.12.2c0.12-1.226.18-2.484,0.18-3.739a39.061,39.061,0,1,0-49.51,37.865,1.058,1.058,0,0,0,.29.038A1.072,1.072,0,0,0,1361.26,848.07ZM1346,785.036a36.965,36.965,0,0,1,62.04,25.827l0.01,0.419h-36.51l-25.85-25.96Z'%20transform='translate(-1332%20-773)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Online PR + Influencer Marketing</h1>
+                <p class="text-center text-gray-500 text-lg ">Online PR on top of your list? Let our experts do
+                    it...</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="scard2 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='180'%20viewBox='0%200%20100%2090'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='491'%20y='1092'%20width='100'%20height='90'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='491'%20y='1092'%20width='100'%20height='90'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjkwIiB2aWV3Qm94PSIwIDAgMTAwIDkwIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjUiIHgyPSI5NSIgeTI9IjkwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZkNTM5MiIgc3RvcC1vcGFjaXR5PSIwLjk5NiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmODZmNjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI5MCIvPgo8L3N2Zz4K'/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M590.172,1127.1l-10.882-3.62v-24.44a7.064,7.064,0,0,0-14.128,0v1.91l-45.866,18.3H505.87a14.826,14.826,0,0,0-3.427,29.26l0.447,0.1,7.657,32.46a1.2,1.2,0,0,0,1.176.93,1.65,1.65,0,0,0,.224-0.02l14.708-2.83a4.077,4.077,0,0,0,1.9-1.04,3.928,3.928,0,0,0,.024-5.57l-2.1-2.1-5.2-20.74,43.884,17.51v1.91a7.064,7.064,0,0,0,14.128,0v-24.44l10.883-3.62a1.2,1.2,0,0,0,.827-1.14v-11.68A1.2,1.2,0,0,0,590.172,1127.1Zm-96.754,6.98a12.449,12.449,0,0,1,12.452-12.42h12.453v24.84H505.87A12.449,12.449,0,0,1,493.418,1134.08Zm30.8,37.27a1.144,1.144,0,0,0,.318.56l2.334,2.33a1.515,1.515,0,0,1-.011,2.15,1.429,1.429,0,0,1-.7.39l-0.043.01-13.478,2.6-7.191-30.48h13.141Zm40.946-6.74-44.421-17.72v-25.62l44.421-17.72v61.06Zm11.71,4.51a4.646,4.646,0,0,1-9.292,0v-70.08a4.646,4.646,0,0,1,9.292,0v70.08Zm11.71-30.07-9.292,3.09v-16.12l9.292,3.09v9.94Z'%20transform='translate(-491%20-1092)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">SEO</h1>
+                <p class="text-center text-gray-500 text-lg ">Whether you're looking for a quick way to make
+                    your...</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="scard2 flex flex-col justify-between gap-5 max-w-[350px]">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='176'%20viewBox='0%200%20100%2088'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='910'%20y='1092'%20width='100'%20height='88'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='910'%20y='1092'%20width='100'%20height='88'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwIiBoZWlnaHQ9Ijg4IiB2aWV3Qm94PSIwIDAgMTAwIDg4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjYiIHgyPSI5NCIgeTI9Ijg4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZkNTM5MiIgc3RvcC1vcGFjaXR5PSIwLjk5NiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmODZmNjQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI4OCIvPgo8L3N2Zz4K'/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M937.779,1146.35l10.763,9.16a1.327,1.327,0,0,0,.834.3,1.283,1.283,0,0,0,1.285-1.39,1.26,1.26,0,0,0-.449-0.87l-9.611-8.18,9.611-8.17a1.28,1.28,0,0,0,.146-1.81,1.28,1.28,0,0,0-.982-0.45,1.309,1.309,0,0,0-.834.3l-10.763,9.16A1.276,1.276,0,0,0,937.779,1146.35Zm32.008-9.15,9.611,8.17-9.61,8.18a1.282,1.282,0,0,0,.836,2.26,1.324,1.324,0,0,0,.833-0.3l10.764-9.16a1.276,1.276,0,0,0,0-1.95l-10.764-9.15a1.226,1.226,0,0,0-.832-0.31h-0.1a1.3,1.3,0,0,0-.879.45A1.281,1.281,0,0,0,969.787,1137.2Zm-13.865,25.45a1.3,1.3,0,0,0,1.526-1l6.708-31.79a1.293,1.293,0,0,0-1-1.53,1.212,1.212,0,0,0-.266-0.03,1.293,1.293,0,0,0-1.26,1.02l-6.708,31.8A1.292,1.292,0,0,0,955.922,1162.65ZM999.207,1092H920.793A10.8,10.8,0,0,0,910,1102.78v66.44A10.8,10.8,0,0,0,920.793,1180h78.414A10.794,10.794,0,0,0,1010,1169.22v-66.44A10.794,10.794,0,0,0,999.207,1092Zm8.213,77.22a8.216,8.216,0,0,1-8.213,8.21H920.793a8.221,8.221,0,0,1-8.217-8.21v-51.38h94.844v51.38Zm0-53.95H912.576v-12.49a8.221,8.221,0,0,1,8.217-8.21h78.414a8.216,8.216,0,0,1,8.213,8.21v12.49Zm-69.376-15.14a4.885,4.885,0,1,0,4.889,4.89A4.893,4.893,0,0,0,938.044,1100.13Zm0,7.19a2.305,2.305,0,1,1,2.312-2.3A2.307,2.307,0,0,1,938.044,1107.32Zm-16.173-7.24a4.885,4.885,0,1,0,4.889,4.88A4.89,4.89,0,0,0,921.871,1100.08Zm0,7.19a2.305,2.305,0,1,1,2.313-2.31A2.31,2.31,0,0,1,921.871,1107.27Zm32.346-7.08a4.88,4.88,0,1,0,4.889,4.88A4.884,4.884,0,0,0,954.217,1100.19Zm0,7.18a2.305,2.305,0,1,1,2.312-2.3A2.307,2.307,0,0,1,954.217,1107.37Z'%20transform='translate(-910%20-1092)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Web & App Development</h1>
+                <p class="text-center text-gray-500 text-lg ">With digital presence becoming the need of the
+                    hour...</p>
+            </div>
+            <!-- Last Card (Centered) -->
+            <div
+                class="scard2 flex flex-col justify-between gap-5 max-w-[350px] sm:col-span-2 lg:col-span-3 sm:mx-auto ">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='180'%20height='180'%20viewBox='0%200%2090%2090'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23051441;%20fill-rule:%20evenodd;%20filter:%20url(%23filter);%20}%20%3c/style%3e%3cfilter%20id='filter'%20x='915'%20y='778'%20width='90'%20height='90'%20filterUnits='userSpaceOnUse'%3e%3cfeImage%20preserveAspectRatio='none'%20x='915'%20y='778'%20width='90'%20height='90'%20result='image'%20xlink:href='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHZpZXdCb3g9IjAgMCA5MCA5MCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI5MCIgeTE9IjkwIiB4Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZDUzOTIiIHN0b3Atb3BhY2l0eT0iMC45OTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjg2ZjY0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIvPgo8L3N2Zz4K'/%3e%3cfeComposite%20result='composite'%20operator='in'%20in2='SourceGraphic'/%3e%3cfeBlend%20result='blend'%20in2='SourceGraphic'/%3e%3c/filter%3e%3c/defs%3e%3cpath%20class='cls-1'%20d='M996.5,797.124h8.5V778H985.875v8.506h-51.75V778H915v19.125h8.5v51.75H915V868h19.125v-8.5h51.75V868H1005V848.874h-8.5v-51.75Zm-79.38-2.115V780.114H932.01v14.895H917.115Zm14.895,70.875H917.115V850.989H932.01v14.895Zm53.865-17.01v8.5h-51.75v-8.5h-8.5v-51.75h8.5v-8.5h51.75v8.5h8.5v51.75h-8.5Zm17.015,2.115v14.895h-14.9V850.989h14.9Zm-14.9-55.98V780.114h14.9v14.895h-14.9Z'%20transform='translate(-915%20-778)'/%3e%3c/svg%3e" alt="" class="w-[100px] self-center">
+                <h1 class="text-center text-blue-950 text-2xl font-bold">Digital Marketing Analytics</h1>
+                <p class="text-center text-gray-500 text-lg ">Convert user behavior into actionable data with
+                    our online analytics...</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--Card-->
+    <div class="smallCard xl:px-52 mx-4">
+        <div
+            class="container mx-auto bg-[#FFEAEA] flex flex-col md:flex-row px-5 sm:px-8 lg:px-10 lg:py-10 py-20 gap-5 relative ">
+            <div class="md:w-1/2 flex flex-col gap-8 justify-center">
+                <h1 class="smallCardText uppercase text-red-400 tracking-widest font-bold font-spectral ">Get in touch
+                </h1>
+                <h1 class="smallCardText text-3xl font-spectral  font-bold text-blue-950 ">Wanna discuss on your project?
+                </h1>
+                <p class="smallCardText text-gray-500 text-lg ">Duis aute irure dolor in reprehenderit in
+                    voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat. Attribution is appreciated and
+                    allows contributors to gain exposure.</p>
+                <div class="smallCardText self-start">
+                    <a href="contact.html"
+                        class="flex gap-3 bg-red-400 px-10 py-4 text-white self-center font-bold border-red-300 border hover:bg-white hover:text-red-400 duration-500 transition-colors ">Start
+                        Project<i class="ri-arrow-right-line"></i></a>
+                </div>
+
+            </div>
+            <div class="md:w-1/2 flex items-center">
+                <img src="/assets/asset%2010.svg" alt="" class="smallCardImg">
+            </div>
+            <img src="/assets/asset%206.png" alt="" class="absolute -bottom-16 -right-32 -z-10 hidden xl:block">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Swiper section -->
+    <div class="container mx-auto flex flex-col gap-10 py-36 overflow-hidden">
+        <div class=" flex flex-col ">
+            <h1 class=" uppercase text-red-400 tracking-widest font-bold font-spectral mb-2 text-center ">Testimonials
+            </h1>
+            <h1 class=" text-4xl font-spectral  font-bold text-blue-950 text-center ">Love from Clients</h1>
+            <p class=" text-gray-500 text-lg font-semibold text-center">Duis aute irure dolor in reprehenderit in voluptate
+                velit
+                .</p>
+        </div>
+        <div class="swiper mySwiper w-full sm:w-[80%] lg:w-[60%] xl:w-[50%]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-blue-950 text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-bold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-blue-950 text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-blue-950">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+                <div class="swiper-slide shadow-2xl ">
+                    <img src="/assets/asset%2012.png" alt="" class="self-center">
+                    <p class="text-center text-white text-lg font-semibold">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iure
+                        nesciunt, nulla consequuntur quas eaque quaerat soluta corporis ipsum unde ipsam."</p>
+                    <div>
+                        <h1 class="text-center text-xl font-semibold text-red-400">John Gregory</h1>
+                        <h1 class="text-center text-white">UI/UX Designer</h1>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--footer section-->
+
+    <div
+        class="footer bg-[url('./Assets/asset35.png')] bg-no-repeat bg-cover bg-center sm:py-20 lg:py-28 py-28 2xl:container 2xl:mx-auto flex justify-center items-center">
+        <div class="container mx-auto text-white lg:px-10">
+            <!--upper div-->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 border-b-2 border-gray-400 border-opacity-40">
+                <div class="upDiv flex flex-col gap-5">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAG3RSTlMAQBDzgProoS0VlkokHe7e1c6Pim1dUzcPd3Yv5aR+AAAAxUlEQVRIx+3VuRLCMAxF0efEyr7v4P//TyzKhEnmuQCK3FGp06gRXEChKCJ7I5Dd6PcoCkEmDUHuoMqiKKpzJDLskHVOzDmKndgDii+RkyePvJpopGqmkfhZaKSqJNHYqzIcslunauUQ8lZVxiHkifOrGYdQq2oqDqFqvEpqDiGLVeUMUqXHaHMOYVXVbRyCUdWPHEKpSkiERRWLMHtCI0wSgPCQAAQrl0gOCIPIOaqttQa7UvcBXZaGIER/8p9u9A1EF4hedEA9K1LUBlAAAAAASUVORK5CYII=" alt="" class="w-[30px]">
+                    <p class="text-lg text-gray-500">Lorem sum dolor sit ame consecuin ctetur adipiscing elit, sed do
+                        that me eiusmod tempor in lawis
+                    </p>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Contact Info<i
+                            class="ri-telegram-2-fill ml-2 "></i></h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300"
+                                href="#">www.digidrive.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Email:
+                                chirag@pioneerpublicityindia.com</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Phone: +91 85869
+                                79010</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">Visit Us<i class="ri-map-pin-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Pioneer House -
+                                2C/6</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Rothak
+                                Road</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Karol Bagh, Nr.
+                                Liberty Cinema</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">New Delhi -
+                                110005</a></li>
+                    </ul>
+                </div>
+                <div class="upDiv">
+                    <h1 class="text-2xl font-bold  lg:text-right mb-5">On Socials<i class="ri-share-line ml-2"></i>
+                    </h1>
+                    <ul class="lg:text-right flex flex-col gap-3">
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Facebook</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Twitter</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Youtube</a></li>
+                        <li><a class="text-lg text-gray-500 hover:text-red-400 duration-300" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+            <!--lower div-->
+            <div class="flex flex-col gap-5 md:flex-row justify-between mt-5">
+                <h1 class="text-sm text-center md:text-lg font-bold text-gray-500">© Copyright 2024 DigiDrive||Created
+                    by Maruf Islam</h1>
+                <div class="flex gap-3 items-center text-center self-center">
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-dribbble-line"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-facebook-fill"></i></a>
+                    <a class="text-gray-500 hover:text-red-400 duration-300" href=""><i
+                            class="ri-twitter-x-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--scrolltrigger cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+    <!--main js-->
+
+
+</body>
+
+</html>
